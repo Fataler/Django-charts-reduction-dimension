@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.contrib.auth import views as authviews
 
 from .views import (BarChartView, Boosting, BoostingGradientView, ChartData,
-                    HomeView, StatCharView, get_data,main,manual)
+                    HomeView, StatCharView, get_data,main,manual,tech)
 
 urlpatterns = [
     url(r'^$', main, ),
@@ -35,6 +35,7 @@ urlpatterns = [
     url(r'^stat/$', StatCharView.as_view(), name='stat'),
     url(r'^bar/$', BarChartView.as_view(), name='bar'),
     url(r'^manual/$', manual, name='manual'),
+    url(r'^tech/$', tech, name='tech'),
     url(r'^', include('chart.urls')),
 
 

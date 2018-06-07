@@ -4,6 +4,8 @@
     var defaultData = []
     var labels = [];
     var colors = [];
+    var groups = '{{groups}}'.replace(/&#39;/g, '');
+    var arr = JSON.parse(groups);
     for (var i = 0; i < arr.length; i++) {
         $('.info').append(parameters[arr[i]] + ', ');
     }
@@ -68,9 +70,7 @@
     }
 </script> {% endblock %} {% block content %}
 <script>
-    var groups = '{{groups}}'.replace(/&#39;/g, '');
-    var arr = JSON.parse(groups);
-
+   
 </script>
 
 <span class="card-title">Visualization of production data using the t-SNE method</span>

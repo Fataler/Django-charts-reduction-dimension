@@ -9,6 +9,6 @@ pip install sklearn
 
 
 
-cd C:\Users\fatal.NONAME\Desktop\charts4\chartsDM
+cd C:\Users\fatal.NONAME\Desktop\charts4\Django-charts-reduction-dimension
 activate chartsdm
 python manage.py runserver

@@ -29,6 +29,8 @@ def manual(request, *args, **kwargs):
 def main(request, *args, **kwargs):
     return render(request, 'main.html')
 
+def tech(request, *args, **kwargs):
+    return render(request, 'techno.html')
 
 class StatCharView(View):
     def get(self, request, *args, **kwargs):
